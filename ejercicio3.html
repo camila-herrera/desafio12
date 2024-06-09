@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej3 contraseña</title>
+    <script src="https://kit.fontawesome.com/8082c38cb4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section>
+        <h1>CONTRASEÑA</h1>
+        <div class="contraseña">
+            <div class="clave">
+                <select name="valores" id="valor1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                </select>
+            </div>
+            <div class="clave">
+                <select name="valores" id="valor2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                </select>
+            </div>
+            <div class="clave">
+                <select name="valores" id="valor3">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="resultado"></p>
+        <button class="ingresar"
+        onclick="
+        value1 = document.querySelector('#valor1').value
+        value2 = document.querySelector('#valor2').value
+        value3 = document.querySelector('#valor3').value
+        
+        if (value1 == '9' && value2 =='1' && value3 =='1')
+        {par = document.querySelector('.resultado')
+        par.innerHTML = 'password 1 correcto'}
+
+        else if  (value1 == '7' && value2 =='1' && value3 =='4')
+        {par = document.querySelector('.resultado')
+        par.innerHTML = 'password 2 es correcto'}
+        
+        else 
+        {par = document.querySelector('.resultado')
+        par.innerHTML = 'password incorrecto'}
+
+        ">ingresar</button>        
+        <button><a class="enlace" href="index.html"><i class="fa-solid fa-arrow-rotate-left"></i></a></button>
+    </footer>
+
+</body>
+</html>
